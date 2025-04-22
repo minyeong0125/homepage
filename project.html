@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Brush+Script&family=Yuji+Boku&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <style>
       .box {
@@ -30,25 +36,18 @@
         color: #333;
       }
 
-      .button {
-        padding: 10px 15px;
-        border: none;
-        border-radius: 10px;
-        background-color: lightgrey;
-        color: white;
+      .box1 a.project-link {
+        display: inline-block;
+        color: #333;
         text-decoration: none;
-        cursor: pointer;
-      }
-
-      .button:hover {
-        background-color: lightgray;
+        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
     <nav class="navbar">
       <div class="container">
-        <div class="logo">Homepage</div>
+        <div class="logo">Portfolio</div>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="secon.html">Secon</a></li>
@@ -67,23 +66,39 @@
     <div class="box">
       <div class="box1">
         <div class="description">1번째 프로젝트</div>
-        <a class="button" href="web-demo-eosin.vercel.app/" target="_blank"
-          >링크</a
+        <a
+          href="https://web-demo-eosin.vercel.app/"
+          class="project-link"
+          target="_blank"
+          >https://web-demo-eosin.vercel.app/</a
         >
       </div>
       <div class="box1">
         <div class="description">2번째 프로젝트</div>
-        <a class="button" href="html1-rosy.vercel.app/" target="_blank">링크</a>
+        <a
+          href="https://html1-rosy.vercel.app/"
+          class="project-link"
+          target="_blank"
+          >https://html1-rosy.vercel.app/</a
+        >
       </div>
       <div class="box1">
         <div class="description">중간고사 개인 프로젝트</div>
-        <a class="button" href="homepage-nine-ochre.vercel.app/" target="_blank"
-          >링크</a
+        <a
+          href="https://homepage-nine-ochre.vercel.app"
+          class="project-link"
+          target="_blank"
+          >https://homepage-nine-ochre.vercel.app</a
         >
       </div>
       <div class="box1">
         <div class="description">중간고사 팀 프로젝트</div>
-        <a class="button" href="https://example4.com" target="_blank">링크</a>
+        <a
+          href="https://teamproject-six.vercel.app"
+          class="project-link"
+          target="_blank"
+          >https://teamproject-six.vercel.app</a
+        >
       </div>
     </div>
   </body>

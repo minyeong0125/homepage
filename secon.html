@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Brush+Script&family=Yuji+Boku&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <style>
       .image {
@@ -14,17 +20,41 @@
         padding: 0;
       }
       img {
+        border-radius: 10px;
         width: 100%;
         max-width: 300px;
         margin: 35px;
         height: auto;
+      }
+
+      .text-box {
+        width: 80%;
+        max-width: 600px;
+        margin: 10px auto;
+        padding: 15px;
+        border: 2px solid #ccc;
+        border-radius: 12px;
+        background-color: #ccc;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        font-family: 'Gaegu', cursive;
+      }
+
+      .text-box h3 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      .text-box p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #444;
       }
     </style>
   </head>
   <body>
     <nav class="navbar">
       <div class="container">
-        <div class="logo">Homepage</div>
+        <div class="logo">Portfolio</div>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="secon.html">Secon</a></li>
@@ -35,10 +65,19 @@
     </nav>
 
     <section class="main">
-      <div class="container">
-        <h1>Secon</h1>
-        <p>Biostar</p>
-        <p>KISA</p>
+      <h1>Secon</h1>
+      <div class="text-box">
+        <p>
+          Secon은 물리보안부터 사이버보안, 스마트시티 보안까지 다양한 분야의
+          보안 기술을 보여주는 전시회 입니다. 이번 전시회를 관람하면서 보안
+          산업의 최신 흐름과 기술을 직접 눈으로 보고 체험할 수 있는 유익한
+          시간이었습니다. 드론을 활용한 경계 감시, 얼굴 인식 출입 시스템, 산업
+          제어망 보안 솔루션 등 다양한 기술을 접할 수 있었습니다. 이번 Secon
+          박람회 관람은 보안 기술이 인간의 삶을 어떻게 보호하고 개선해
+          나가는지에 대해 알려주었습니다. 그리고 앞으로의 학업과 진로 선택에
+          있어서도 매우 의미 있는 경험이 되었으며, 다양한 보안 기술에 대해 더
+          공부하고 싶다는 동기부여를 얻는 소중한 시간이었습니다.
+        </p>
       </div>
     </section>
 

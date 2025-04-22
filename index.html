@@ -3,13 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Brush+Script&family=Yuji+Boku&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <style>
+      body{
+        background-color: black;
+      }
+
+      .section {
+        min-height: 100vh;
+        padding: 100px 20px 40px;
+        text-align: center;
+        scroll-behavior: smooth;
+      }
+
+      .image-mainsection {
+        position: relative;
+        min-height: 100vh;
+        background-image: url(image/background.jpeg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .image-text {
+        font-size: x-large;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        text-shadow: 2px 2px 5px rgb(0, 50, 11);
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+      }
+
+      .profile-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .profile-image img {
+        border-radius: 10px;
+        margin-right: 40px;
+      }
+
+      .profile-info h2 {
+        font-family: 'Gaegu', sans-serif;
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+
+      .profile-info h4 {
+        margin-bottom: 5px;
+      }
+
+      .profile-info a.github-link {
+        display: inline-block;
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+
+      .profile-info p {
+        font-size: 16px;
+        color: #fff;
+        margin-top: 10px;
+      }
+
+      .profile-info a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar">
       <div class="container">
-        <div class="logo">Homepage</div>
+        <div class="logo">Portfolio</div>
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="secon.html">Secon</a></li>
@@ -19,23 +100,34 @@
       </div>
     </nav>
 
+
+    <main>
+      <div class="image-mainsection">
+        <div class="image-text">
+          <section id="home" class="section">
+        <h1>Portfolio</h1>
+      </div>
+    </div>
+
     <section class="main">
       <div class="container">
-        <h1>Home</h1>
-        <p>이름: 박민영</p>
-        <a href="https://github.com/minyeong0125" target="_blank">
-          <img
-            src="https://github.com/minyeong0125.png"
-            height="200px"
-            alt="GitHub Profile"
-          />
-        </a>
-        <div class="card-body3">
-          <h4 class="card">Github Link</h4> 
-          <button type="button" class="btn btn-outline-dark">
-            <a href="https://github.com/minyeong0125" class="btn btn-primary"
-              >minyeong0125</a>
-          </button>
+        <div class="profile-wrapper">
+          <div class="profile-image">
+            <a href="https://github.com/minyeong0125" target="_blank">
+              <img
+                src="https://github.com/minyeong0125.png"
+                alt="GitHub Profile"
+                height="200px"
+              />
+            </a>
+          </div>
+    
+          <div class="profile-info">
+            <h2>박민영</h2>
+            <h4>Github: <a href="https://github.com/minyeong0125" class="github-link" target="_blank">minyeong0125</h4></a>
+            <p>Email: minyeong05125@gmail.com</p>
+          </div>
+        </div>
       </div>
     </section>
   </body>
